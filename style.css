@@ -74,9 +74,11 @@
   --bs-btn-disabled-border-color: #6c757d;
 }
 
-.hide{
+/* .hide {
   height: 0;
-}
+  overflow: hidden;
+  transition: height 0.3s ease;
+} */
 
 .item {
   cursor: pointer;
@@ -91,7 +93,7 @@
   width: 100%;
 }
 
-.sec1{
+.sec1 {
   margin-top: 20vh;
 }
 .img-container {
@@ -121,6 +123,6 @@
   font-size: 0.7em;
 }
 
-.main-container{
+.main-container {
   max-width: 1100px;
 }
