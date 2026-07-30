@@ -7,9 +7,11 @@
   --bs-primary: rgb(255, 107, 43); /* Changes primary to a purple hue */
   --bs-success: #20c997; /* Changes success to a teal hue */
   --bs-warning: #fd7e14; /* Changes warning to an orange hue */
+  --bs-light: rgb(255, 255, 255); /* Changes warning to an orange hue */
 
   /* You can also override the RGB variants if you use Bootstrap's opacity utilities */
   --bs-primary-rgb: 255, 107, 43;
+  --bs-light-rgb: 255, 255, 255;
   --btn-bg: rgb(255, 107, 43);
   --btn-hover-bg: rgb(255, 143, 92);
   --color: rgb(255, 107, 43);
@@ -70,6 +72,10 @@
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #6c757d;
   --bs-btn-disabled-border-color: #6c757d;
+}
+
+.hide{
+  height: 0;
 }
 
 .item {
