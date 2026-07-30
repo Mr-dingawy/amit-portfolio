@@ -4,7 +4,10 @@ const navSlide = document.getElementById('nav-slid');
 
 
 navBtn.addEventListener("click", ()=>{
-    navSlide.classList.toggle("show");
-    navBtn.classList.contains("fa-bars")? navBtn.classList.replace("fa-bars" ,"fa-x"):navBtn.classList.replace("fa-x", "fa-bars")
+    navSlide.classList.toggle("hide");
+    navSlide.classList.toggle("slide");
+    
+
+    
 })
 console.log(navSlide)

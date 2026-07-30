@@ -23,9 +23,9 @@
   </head>
   <body class="roboto">
     <div class="container-fluid main-container">
-      <nav class="position-relative">
+      <nav class=" position-sticky top-0 z-1 bg-light">
         <div
-          class="d-flex justify-content-between align-items-center py-2 mb-md-5"
+          class="d-flex justify-content-between align-items-center py-2 mb-md-5 "
         >
           <a href="" class="text-decoration-none text-reset fw-bolder">
             Mr-<span class="text-primary">Dingawy</span>
@@ -57,31 +57,34 @@
             </li>
           </ul>
           <div>
-            <i class="bi bi-moon-stars mx-2"></i>
-            <i class="fa-solid fa-bars d-md-none d-inline" id="nav-btn"></i>
+            <i class="bi bi-moon-stars mx-2" style="cursor: pointer;"></i>
+            <i style="cursor: pointer;" class="fa-solid fa-bars d-md-none d-inline" id="nav-btn"></i>
             <button class="btn btn-custom px-3 d-none d-md-inline">
               Hire me <i class="bi bi-arrow-right"></i>
             </button>
           </div>
         </div>
         <div
-          class="hide d-md-none position-fixed bg-light w-100 z-1  fade "
+          class=" d-md-none position-fixed bg-light w-100 z-1 hide  "
           id="nav-slid"
         >
           <ul class="d-md-flex d-flex flex-column m-0 list-unstyled gap-3">
+            <br>
             <li class="item">Services</li>
             <li class="item">Work</li>
             <li class="item">About</li>
             <li class="item">Reviews</li>
             <li class="item">Blog</li>
-            <li class="item">Contact</li>
+            <li class="item mb-3" >Contact</li>
           </ul>
-          <button class="btn btn-custom px-3">
-            Hire me <i class="bi bi-arrow-right"></i>
-          </button>
+          <div class="border-top ">
+            <button class="btn btn-custom px-3 my-2 ">
+              Hire me <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
         </div>
       </nav>
-      <section class="sec1 d-flex gap-5 justify-content-center">
+      <section class="sec1 d-flex flex-md-row flex-column gap-5 justify-content-center">
         <div class="d-flex flex-column gap-4">
           <h6 class="text-primary">AVAILABLE FOR WORK</h6>
           <h1 class="display-3 fw-bolder">
@@ -116,7 +119,7 @@
             </div>
           </div>
         </div>
-        <div class="img-container s-5">
+        <div class="img-container ">
           <img
             class="img-personal"
             src="./images/Gemini_Generated_Image_w8it1fw8it1fw8it.png"

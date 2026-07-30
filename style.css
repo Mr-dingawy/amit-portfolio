@@ -73,15 +73,20 @@
   --bs-btn-disabled-bg: #6c757d;
   --bs-btn-disabled-border-color: #6c757d;
 }
-
-/* .hide {
-  height: 0;
+.hide {
+  max-height: 0;
   overflow: hidden;
-  transition: height 0.3s ease;
-} */
+  transition: max-height 0.3s ease;
+}
+
+.slide {
+  max-height: 500px; 
+  transition: max-height 0.3s ease;
+}
 
 .item {
   cursor: pointer;
+  font-size: 0.9em;
 }
 .line {
   height: 1px;
@@ -95,11 +100,13 @@
 
 .sec1 {
   margin-top: 20vh;
+  align-items: center;
 }
 .img-container {
   position: relative;
-  max-width: 400px;
-  max-height: 400px;
+  width: 400px;
+  height: 400px;
+  flex-shrink: 0;
   border: 0px solid black;
   border-radius: 1em;
 }
@@ -107,7 +114,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 0px solid black;
   border-radius: 1.4em;
   object-position: top;
 }
