@@ -15,6 +15,7 @@
   --btn-bg: rgb(255, 107, 43);
   --btn-hover-bg: rgb(255, 143, 92);
   --color: rgb(255, 107, 43);
+  --bg2:#f9f9f9;
 }
 
 [data-bs-theme="dark"] {
@@ -97,6 +98,9 @@
 .item:hover .line {
   width: 100%;
 }
+.item:hover {
+  color: var(--color);
+}
 
 .sec1 {
   margin-top: 20vh;
@@ -104,8 +108,8 @@
 }
 .img-container {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   flex-shrink: 0;
   border: 0px solid black;
   border-radius: 1em;
@@ -125,10 +129,28 @@
   transform: translateX(-20px);
 }
 
+@media (max-width : 768px) {
+  .img-btn {
+  
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+}
 .sub-text {
   font-size: 0.7em;
 }
 
 .main-container {
   max-width: 1100px;
+}
+
+.service{
+    transition: transform 0.3s ease;
+
+}
+.service:hover{
+  outline: 1px solid var(--bs-primary);
+    transform: translateY(-5px);
+
 }

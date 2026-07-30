@@ -22,10 +22,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="roboto">
-    <div class="container-fluid main-container">
-      <nav class=" position-sticky top-0 z-1 bg-light">
+    <div position-sticky top-0 z-1 bg-light>
+      <nav class="main-container mx-auto">
         <div
-          class="d-flex justify-content-between align-items-center py-2 mb-md-5 "
+          class="d-flex justify-content-between align-items-center p-2 mb-md-5"
         >
           <a href="" class="text-decoration-none text-reset fw-bolder">
             Mr-<span class="text-primary">Dingawy</span>
@@ -57,40 +57,49 @@
             </li>
           </ul>
           <div>
-            <i class="bi bi-moon-stars mx-2" style="cursor: pointer;"></i>
-            <i style="cursor: pointer;" class="fa-solid fa-bars d-md-none d-inline" id="nav-btn"></i>
+            <i class="bi bi-moon-stars mx-2" style="cursor: pointer"></i>
+            <i
+              style="cursor: pointer"
+              class="fa-solid fa-bars d-md-none d-inline"
+              id="nav-btn"
+            ></i>
             <button class="btn btn-custom px-3 d-none d-md-inline">
               Hire me <i class="bi bi-arrow-right"></i>
             </button>
           </div>
         </div>
         <div
-          class=" d-md-none position-fixed bg-light w-100 z-1 hide  "
+          class="d-md-none position-fixed bg-light w-100 z-1 hide"
           id="nav-slid"
         >
-          <ul class="d-md-flex d-flex flex-column m-0 list-unstyled gap-3">
-            <br>
+          <ul class="d-md-flex d-flex flex-column m-0 list-unstyled gap-3 px-2">
             <li class="item">Services</li>
             <li class="item">Work</li>
             <li class="item">About</li>
             <li class="item">Reviews</li>
             <li class="item">Blog</li>
-            <li class="item mb-3" >Contact</li>
+            <li class="item mb-3">Contact</li>
           </ul>
-          <div class="border-top ">
-            <button class="btn btn-custom px-3 my-2 ">
-              Hire me <i class="bi bi-arrow-right"></i>
-            </button>
+          <div class="px-2">
+            <div class="border-top">
+              <button class="btn btn-custom px-3 my-2">
+                Hire me <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
           </div>
         </div>
       </nav>
-      <section class="sec1 d-flex flex-md-row flex-column gap-5 justify-content-center">
+    </div>
+    <div class=" ">
+      <section
+        class="sec1 d-flex flex-md-row flex-column gap-5 justify-content-center main-container mx-auto p-2"
+      >
         <div class="d-flex flex-column gap-4">
           <h6 class="text-primary">AVAILABLE FOR WORK</h6>
           <h1 class="display-3 fw-bolder">
             Hi, I'm <span class="text-primary">Khaled</span>
           </h1>
-          <p class="w-75">
+          <p class="">
             Freelance
             <span class="fw-bolder">UI/UX Designer & Frontend Developer</span>.
             I design and build digital products that people love to use — fast,
@@ -119,13 +128,70 @@
             </div>
           </div>
         </div>
-        <div class="img-container ">
+        <div class="img-container shadow img-fluid">
           <img
             class="img-personal"
             src="./images/Gemini_Generated_Image_w8it1fw8it1fw8it.png"
             alt=""
           />
           <button class="btn btn-custom img-btn">Open to projects</button>
+        </div>
+      </section>
+    </div>
+    <div style="background-color: var(--bg2)" class="sec1">
+      <section class="sec2 main-container mx-auto p-4">
+        <p>WHAT I DO</p>
+        <h1 class="display-4 fw-bold">Services</h1>
+        <div class="d-flex flex-column flex-md-row gap-4">
+          <div class="service p-4 bg-light shadow rounded-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5>UI/UX Design</h5>
+              <img
+                class="bg-light rounded-3 p-2 img-fluid"
+                style="max-width: 80px"
+                src="./images/Asset 1.png"
+                alt=""
+              />
+            </div>
+
+            <p class="fw-light">
+              From wireframes to polished Figma prototypes. Intuitive, visually
+              compelling interfaces that convert visitors into users and put
+              usability first.
+            </p>
+          </div>
+          <div class="service p-4 bg-light shadow rounded-4 bg-dark text-light">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5>Frontend Dev</h5>
+              <img
+                class="bg-light rounded-3 p-2 img-fluid"
+                style="max-width: 80px"
+                src="./images/Asset 2.png"
+                alt=""
+              />
+            </div>
+            <p class="fw-light">
+              Production-grade code with Tailwind CSS and Alpine.js.
+              Pixel-perfect, fully responsive, SEO-friendly and blazing fast —
+              no bloat, no heavy frameworks.
+            </p>
+          </div>
+          <div class="service p-4 bg-light shadow rounded-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5>Landing Pages</h5>
+              <img
+                class="bg-light rounded-3 p-2 img-fluid"
+                style="max-width: 80px"
+                src="./images/Asset 3.png"
+                alt=""
+              />
+            </div>
+            <p class="fw-light">
+              High-converting pages for SaaS, apps and personal brands. Designed
+              to communicate value instantly and drive action from the first
+              scroll.
+            </p>
+          </div>
         </div>
       </section>
     </div>
