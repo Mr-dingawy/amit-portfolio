@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* custom.css */
+
+:root {
+  /* Change the main theme colors */
+  --bs-primary: rgb(255, 107, 43); /* Changes primary to a purple hue */
+  --bs-success: #20c997; /* Changes success to a teal hue */
+  --bs-warning: #fd7e14; /* Changes warning to an orange hue */
+
+  /* You can also override the RGB variants if you use Bootstrap's opacity utilities */
+  --bs-primary-rgb: 255, 107, 43;
+  --btn-bg: rgb(255, 107, 43);
+  --btn-hover-bg: rgb(255, 143, 92);
+  --color: rgb(255, 107, 43);
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: #121212;
+  --bs-body-color: #ffffff;
+  --color: rgb(255, 107, 43);
+
+  --bs-primary: #9b7dff;
+  --bs-success: #20c997;
+  --bs-warning: #ffb84d;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.btn-custom {
+  /* --- Typography & Layout --- */
+  /* Inherits from your global font family */
+  /* --bs-btn-font-family: ;  */
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 400;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-padding-y: 0.375rem;
+
+  /* --- Shape & Border --- */
+  --bs-btn-border-width: 0px;
+  --bs-btn-border-radius: 1rem;
+
+  /* --- Base Colors (Matches default btn-secondary) --- */
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--btn-bg);
+  --bs-btn-border-color: #6c757d;
+
+  /* --- Hover State --- */
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--btn-hover-bg);
+  --bs-btn-hover-border-color: #565e64;
+
+  /* --- Active State (When Clicked) --- */
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--btn-hover-bg);
+  --bs-btn-active-border-color: ;
+
+  /* --- Focus State & Shadow Ring --- */
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem
+    rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
+  --bs-btn-focus-shadow-rgb: 130, 138, 145; /* Gray glow */
+
+  /* --- Disabled State --- */
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6c757d;
+  --bs-btn-disabled-border-color: #6c757d;
+}
+
+.item {
+  cursor: pointer;
+}
+.line {
+  height: 1px;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.item:hover .line {
+  width: 100%;
+}
+.img-container{
+    position: relative;
+    max-width: 700px;
+    max-height: 400px;
+    border: 0px solid black;
+    border-radius: 1em;
+    
+}
+.img-personal{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+      border: 0px solid black;
+    border-radius: 1.5em;
+}
+
+.img-btn{
+    position: absolute;
+  bottom: -20px;
+  left: 0px;
+  transform: translateX(-20px);
+}
+
+.sub-text{
+    font-size: .7em;
+    
+}
