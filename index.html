@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="roboto">
-    <div position-sticky top-0 z-1 bg-light>
+    <div class="position-sticky top-0 z-1 bg-light">
       <nav class="main-container mx-auto">
         <div
           class="d-flex justify-content-between align-items-center p-2 mb-md-5"
@@ -138,9 +138,12 @@
         </div>
       </section>
     </div>
-    <div style="background-color: var(--bg2)" class="sec1">
+    <div
+      style="background-color: var(--bg2); padding-bottom: 80px"
+      class="sec1"
+    >
       <section class="sec2 main-container mx-auto p-4">
-        <p>WHAT I DO</p>
+        <p class="text-primary">WHAT I DO</p>
         <h1 class="display-4 fw-bold">Services</h1>
         <div class="d-flex flex-column flex-md-row gap-4">
           <div class="service p-4 bg-light shadow rounded-4">
@@ -191,6 +194,147 @@
               to communicate value instantly and drive action from the first
               scroll.
             </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="align-items-center mt-5">
+      <section class="sec3 main-container mx-auto p-4">
+        <p class="text-primary">PORTFOLIO</p>
+        <h1 class="display-4 fw-bold mb-5">Selected work</h1>
+        <div class="row g-4">
+          <!-- Big Card -->
+          <div class="col-12 col-md-6">
+            <div
+              class="service rounded-4 overflow-hidden h-100"
+              style="background-color: var(--bg2)"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 img-container2"
+              >
+                <img
+                  class="bg-light img-fluid img-sec3"
+                  src="https://picsum.photos/800/800?1"
+                  alt=""
+                />
+              </div>
+
+              <div class="p-3">
+                <div class="d-flex gap-3">
+                  <p class="lbl">SaaS</p>
+                  <p class="lbl">Figma</p>
+                  <p class="lbl">Tailwind</p>
+                </div>
+                <h4 class="fw-bolder my-2">Novu — SaaS Dashboard</h4>
+
+                <p class="fw-light problem">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi quis, odit nam aperiam fugiat optio libero. Nisi,
+                  minus officiis eius odio tempora velit fugit at, id labore ut
+                  <br />
+                  libero reiciendis! Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Ipsa ducimus repudiandae eligendi veritatis
+                  <br />
+                  <br />
+                  dicta quo fuga fugiat autem tempore perspiciatis illo
+                  doloremque est labore, molestiae eius, voluptatum ex aut
+                  quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing
+                  <br />
+                  <br />
+                  elit. Consequatur neque ipsum eveniet eligendi dolores, dicta
+                  beatae? Velit iusto nemo praesentium architecto, ipsa
+                  excepturi facere quisquam, reprehenderit a cumque sapiente?
+                  Laudantium!
+                </p>
+                <div class="d-flex">
+                  <div class="d-flex gap-2 fw-bold">
+                    <li class="item d-inline">
+                      View case study
+                      <div class="bg-dark line"></div>
+                    </li>
+                    <i class="bi bi-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-12 col-md-6 d-flex flex-column">
+            <div
+              class="service bg-dark text-light rounded-4 overflow-hidden mb-4"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 img-container3"
+              >
+                <img
+                  class="bg-light rounded-3 img-fluid img-sec3"
+                  src="https://picsum.photos/800/800?2"
+                  alt=""
+                />
+              </div>
+
+              <div class="p-3">
+                <div class="d-flex gap-3">
+                  <p class="lbl text-dark">Fintech</p>
+                  <p class="lbl text-dark">Landing page</p>
+                </div>
+                <h4 class="fw-bolder my-2">Finlo — Fintech App</h4>
+
+                <p class="fw-light problem">
+                  Marketing site and onboarding flow for a personal finance app
+                  targeting young professionals. Tailwind CSS + Alpine.js.
+                </p>
+                <div class="d-flex">
+                  <div class="d-flex gap-2 fw-bold">
+                    <li class="item d-inline">
+                      View case study
+                      <div class="bg-dark line"></div>
+                    </li>
+                    <i class="bi bi-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="service rounded-4 overflow-hidden"
+              style="background-color: var(--bg2)"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 img-container3"
+              >
+                <img
+                  class="bg-light rounded-3 img-fluid img-sec3"
+                  src="https://picsum.photos/800/800?3"
+                  alt=""
+                />
+              </div>
+
+              <div class="p-3">
+                <div class="d-flex gap-3">
+                  <p class="lbl">Agency</p>
+                  <p class="lbl">Animation</p>
+                  <p class="lbl">Tailwind</p>
+                </div>
+                <h4 class="fw-bolder my-2">Orea — Creative Agency</h4>
+
+                <p class="fw-light problem">
+                  Bold editorial site for a Paris-based branding studio.
+                  Scroll-driven animations and custom cursor to match their
+                  premium positioning.
+                </p>
+                <div class="d-flex">
+                  <div class="d-flex gap-2 fw-bold">
+                    <li class="item d-inline">
+                      View case study
+                      <div class="bg-dark line"></div>
+                    </li>
+                    <i class="bi bi-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
